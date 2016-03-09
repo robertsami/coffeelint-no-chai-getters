@@ -1,5 +1,23 @@
 CHAI_GETTERS = [
-  'ok'
+  'ok',
+  'true',
+  'false',
+  'null',
+  'undefined',
+  'NaN',
+  'exist',
+  'empty',
+  'arguments',
+  'extensible',
+  'sealed',
+  'frozen',
+  'called',
+  'calledOnce',
+  'calledTwice',
+  'calledThrice',
+  'calledWithNew',
+  'alwaysCalledWithNew',
+  'notCalled'
 ]
 
 module.exports = class NoChaiGetters
@@ -12,7 +30,7 @@ module.exports = class NoChaiGetters
 
   lintNodeHelper: (node, astApi, inCall) ->
     node.eachChild (child) =>
-      if child.constructor.name == 'Access' and (child.name.value in CHAI_GETTERS) and inCall
+      if child.constructor.name == 'Access' and (child.name.value in CHAI_GETTERS) and not inCall
         @errors.push astApi.createError {
           lineNumber: child.locationData.first_line + 1
         }
