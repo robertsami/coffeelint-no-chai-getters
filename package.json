@@ -1,0 +1,39 @@
+{
+  "name": "coffeelint-no-chai-getters",
+  "version": "0.0.1",
+  "description": "Checks for the use of getters in chaijs matchers",
+  "main": "index.js",
+  "keywords": [
+    "coffeelint",
+    "coffeelintrule",
+    "coffee-lint",
+    "newline",
+    "rule"
+  ],
+  "author": {
+    "name": "Rob Sami",
+    "email": "robert.sami@gmail.com"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/robertsami/coffeelint-no-chai-getters/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "homepage": "https://github.com/robertsami/coffeelint-no-chai-getters",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robertsami/coffeelint-no-chai-getters"
+  },
+  "peerDependencies": {
+    "coffeelint": ">=1.4"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.7.0"
+  }
+}
