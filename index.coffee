@@ -1,4 +1,4 @@
-module.exports = class NoImplicitReturns
+module.exports = class NoChaiGetters
 
   rule:
     name: 'no_chai_getters'
